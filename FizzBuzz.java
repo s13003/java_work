@@ -1,18 +1,18 @@
 import java.util.Scanner;
 
 class FizzBuzz{
-  public static void main(String...args){
-    Scanner stdIn = new Scanner(System.in);
 
-    final int fizz = 3;
-    final int buzz = 5;
+  static final int fizz = 3;
+  static final int buzz = 5;
 
-    final String Fizz = "Fizz";
-    final String Buzz = "Buzz";
+  static final String Fizz = "Fizz";
+  static final String Buzz = "Buzz";
 
-    int Count = 100;
+  static final int Count = 100;
+
+  static void FB(){
     for(int i = 0; i <= Count; i++){
-      if(i % buzz == 0 && i % fizz == 0){
+      if(i % fizz == 0 && i % buzz == 0){
         System.out.println(Fizz + Buzz);
       }else if(i % buzz == 0){
         System.out.println(Buzz);
@@ -22,5 +22,8 @@ class FizzBuzz{
         System.out.println(i);
       }
     }
+  }
+  public static void main(String...args){
+    FB();
   }
 }
