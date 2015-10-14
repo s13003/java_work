@@ -10,7 +10,7 @@ class Nabeatsu{
       temp = String.valueOf(x);
       if(temp.indexOf(check_Three) >= 0){
         System.out.println(Three);
-      }else if(x % 3 == 0 && x > 3){
+      }else if(x % 3 == 0 && x > 0){
         System.out.println(Three);
       }else{
         System.out.println(x);
