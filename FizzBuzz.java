@@ -1,5 +1,10 @@
 import java.util.Scanner;
 
+  /**
+   * FizzBuzzを実行するクラス
+   * @author Daiki GIMA
+   */
+
 class FizzBuzz{
 
   static final int fizz = 3;

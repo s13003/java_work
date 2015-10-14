@@ -1,5 +1,10 @@
 class Nabeatsu{
 
+  /**
+   * Nabeatsuを実行するクラス
+   * author Daiki GIMA
+   */
+
   static final String Three = "Three";
   static final String check_Three = "3";
 
