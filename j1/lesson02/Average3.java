@@ -7,6 +7,8 @@ class Average3{
      * @author Daiki GIMA
      * @version 1.0
      * @param args 実行時引数。無視されます。
+     *
+     * 3つの値の平均値を計算、出力するプログラムです。
      */
     final double[] array = {5.5, 10.0, 12.1};
     double sum = array[0];

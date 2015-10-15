@@ -6,6 +6,7 @@ class Factorial10{
      * @author Daiki GIMA
      * @version 1.0
      * @param args 実行時引数。無視されます。
+     *
      * 10の階乗を計算、出力するプログラムです。
      */
     final int num = 10;
