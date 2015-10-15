@@ -4,22 +4,29 @@ import java.util.Scanner;
 
 class TriangleArea{
 
-  static double Triangle(double a, double b, double c){
-    double[] Side;
-    double S = (a + b + c) / 2;
-    double menseki = Math.sqrt(S * (S - a) * (S - b) * (S - c));
-    return menseki;
-  }
-
   public static void main(String...args){
-    Scanner stdIn = new Scanner(System.in);
-    System.out.print("辺aの長さ:");
-    double side_a = stdIn.nextDouble();
-    System.out.print("辺bの長さ:");
-    double side_b = stdIn.nextDouble();
-    System.out.print("辺cの長さ:");
-    double side_c = stdIn.nextDouble();
 
-    System.out.println(Triangle(side_a, side_b, side_c)); 
+    /**
+     * @author Daiki GIMA
+     * @version 1.0
+     * @param args 実行時引数。無視されます。
+     *
+     * 3辺に値を入力し、三角形の面積を求めるプログラムです。
+     */
+
+    Scanner stdIn = new Scanner(System.in);
+    double[] Side = new double[3];
+    char Side_code = 97;
+
+    for(int i = 0; i < Side.length; i++){
+      System.out.print("辺" + Side_code + "の長さ:");
+      Side[i] = stdIn.nextDouble();
+      Side_code++;
+    }
+
+    double S = (Side[0] + Side[1] + Side[2]) / 2;
+    double menseki = Math.sqrt(S * (S - Side[0]) * (S - Side[1]) * (S - Side[2]));
+
+    System.out.println(menseki);
   }
 }
