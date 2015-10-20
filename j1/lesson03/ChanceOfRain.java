@@ -5,6 +5,14 @@ import java.util.Scanner;
 class ChanceOfRain{
   public static void main(String...args){
 
+  /**
+   * @author Daiki GIMA
+   * @version 1.0
+   * @param args メイン実行時の引数。無視されます。
+   *
+   * 入力された降水確率に対してメッセージを出力するプログラムです。
+   */
+
     Scanner stdIn = new Scanner(System.in);
     int x = 0;
     boolean flag = false;
