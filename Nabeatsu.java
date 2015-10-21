@@ -13,7 +13,7 @@ class Nabeatsu{
     String temp;
     while(x < 100){
       temp = String.valueOf(x);
-      if(temp.indexOf(check_Three) >= 0){
+      if(!(temp.indexOf(check_Three) == -1)){
         System.out.println(Three);
       }else if(x % 3 == 0 && x > 0){
         System.out.println(Three);
